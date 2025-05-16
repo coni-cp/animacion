@@ -1,0 +1,59 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../img/planicie.jpg) 50% 0 no-repeat;
+    background-size: cover;
+}
+.campo{
+    display: flex;
+}
+.creepy{ 
+    width: 300px;
+    height: 300px;
+}
+
+.arbol{
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+.persona{
+    position: relative;
+     width: 200px;
+    height: 300px; 
+}
+
+.tablero{
+    position: fixed;
+    top: 20px;     
+    right: 20px;       
+    z-index: 1; 
+
+}
+.explicacion{
+    background-color: rgba(145, 81, 9, 0.596);
+    width: 300px;
+    padding: 10px;
+    text-align: left;
+}
+h2{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 25px;
+    color: white;
+
+}
+.controles{
+    font-family: "Share Tech Mono", monospace;
+    font-size: 20px;
+    color: white;
+}
+
+.btn{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 2px;
+}
+
