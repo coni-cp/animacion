@@ -2,29 +2,24 @@ console.log('conexion')
    
 $(document).ready(function(){
     $(document).keydown(function(l) {
-        if (l.which === 65){//izquierda
-             $("#personaje")
-             .stop(true, true) // Detiene animaciones anteriores
-             .animate({ right: '+=200px' }, 200);;
+     
+        const $personaje = $("#personaje");
+
+        if (l.which === 65){ // A - izquierda
+            $personaje
+                .css({ left: '-=20px' }, 100);
+        } 
+        else if(l.which === 68) { // D - derecha
+            $personaje
+                .css({ left: '+=20px' }, 100);
+        } 
+        else if (l.which === 83) { // S - abajo
+            $personaje
+                .css({ top: '+=20px' }, 100);
+        } 
+        else if(l.which === 87) { // W - arriba
+            $personaje
+                .css({ top: '-=20px' }, 100);
         }
-        if (l.which === 68) {//derecha
-            $("#personaje")
-             .stop(true, true) 
-             .animate({ left: '+=200px' }, 200);;
-        
-        }
-         if (l.which === 83) {
-            $("#personaje")
-             .stop(true, true) 
-             .animate({ right: '+=200px' }, 200);;
-         
-        }
-         if (l.which === 87) {
-            $("#personaje")
-             .stop(true, true) // Detiene animaciones anteriores
-             .animate({ right: '+=200px' }, 200);;
-          
-        }
-      });
-   
-}) 
+    });
+});
