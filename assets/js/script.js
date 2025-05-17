@@ -27,12 +27,41 @@ function start(){
             }
         });//funcion keydown
 
-        function moverMata() {
-            $("#mata")
-                .show()
-                .animate({ left: "300px" }, 3000)
-        }
-        setTimeout(moverMata, 10000);
+      function moverMata() {
+    const sonido = document.getElementById("audioExplosion");
+    const perdiste = document.getElementById("lastaudio");
+
+    $("#mata")
+        .show()
+        .animate({ left: "300px" }, 2000, function () {
+            $("#explosion").fadeIn(200); // Muestra la imagen
+
+            sonido.currentTime = 0;
+            sonido.play();
+
+            perdiste.currentTime = 0;
+            perdiste.play();
+
+           setTimeout(() => {
+                console.log("Mostrando mensaje final...");
+                $("#final").fadeIn(400);
+            }, 1500);
+
+        });
+}
+
+setTimeout(moverMata, 10000);
+
+
+
+
+      
+
+
+        
+      
+
+           
 
 
 

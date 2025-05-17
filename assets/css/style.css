@@ -6,9 +6,19 @@
 body{
     background: url(../img/planicie.jpg) 50% 0 no-repeat;
     background-size: cover;
-      height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+#explosion{
+    position: fixed;      /* <-- Esto es esencial */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;         /* Asegúrate de que esté sobre todo */
+    object-fit: cover;     /* Ajusta la imagen sin deformarla */
+    display: none;
 }
 .campo{
     display: flex;
@@ -78,6 +88,19 @@ p{
     justify-content: center;
     align-items: center;
 }
+.instrucciones-finales {
+    background-color: rgba(66, 41, 13, 0.973);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* más alto para estar sobre todo */
+}
+
 .mensaje{
     width: 50%;
     height: 50%;

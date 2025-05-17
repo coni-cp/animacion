@@ -12,33 +12,43 @@
 </head>
 <body>
     <div class="campo">
-            <div class=" arbol">
-                 <img src="assets/img/panal.png" class="panal"> 
-            </div>
-            <div class="ubi-perso">
-                 <img src="assets/img/personaje.png" class="persona" id="personaje"> 
-            </div>
-            <img src="assets/img/creepy.png" class="creepy" id="mata">
+        <div class=" arbol">
+            <img src="assets/img/panal.png" class="panal"> 
+        </div>
+        <div class="ubi-perso">
+            <img src="assets/img/personaje.png" class="persona" id="personaje"> 
+        </div>
+        <img src="assets/img/creepy.png" class="creepy" id="mata">
+        <img src="assets/img/explosion.jpg" id="explosion"> 
+        <audio src="assets/audio/explosion-creeper.mp3" id="audioExplosion"></audio>
+        <audio src="assets/audio/gameover.mp3" id="lastaudio"></audio>
     </div>
+
    <div class="tablero">
-    <div class="explicacion">
-        <h2>Controles</h2>
-        <ul class="controles">
-            <li id="up"> Mover arriba -> <strong>W</strong></li>
-            <li id="left"> Mover izquierda -> <strong>A</strong></li>
-            <li id="down"> Mover abajo -> <strong>S</strong></li>
-            <li id="right">Mover derecha -> <strong>D</strong></li>
-            <li id="leave">Desaparecer -> <strong>P</strong></li>
-        </ul>
-    </div>
-    <div class="instrucciones" id="ocultarIns">
-        <div class="mensaje">
-            <h2 class="text-center titulo">Recuerda</h2>
-            <p>Cuando comience el juego, tendrás solo 10 segundos para esconderte. Si el Creeper alcanza el árbol… prepárate para la explosión.</p>
-            <button id="comenzar" onclick="start()">Comenzar</button>
+        <div class="explicacion">
+            <h2>Controles</h2>
+            <ul class="controles">
+                <li id="up"> Mover arriba -> <strong>W</strong></li>
+                <li id="left"> Mover izquierda -> <strong>A</strong></li>
+                <li id="down"> Mover abajo -> <strong>S</strong></li>
+                <li id="right">Mover derecha -> <strong>D</strong></li>
+                <li id="leave">Desaparecer -> <strong>P</strong></li>
+            </ul>
+        </div>
+        <div class="instrucciones" id="ocultarIns">
+            <div class="mensaje">
+                <h2 class="text-center titulo">Recuerda</h2>
+                <p>Cuando comience el juego, tendrás solo 10 segundos para esconderte. Si el Creeper alcanza el árbol… prepárate para la explosión.</p>
+                <button id="comenzar" onclick="start()">Comenzar</button>
+            </div>
         </div>
     </div>
-</div>
+    <div class="instrucciones-finales"  style="display: none;" id="final">
+        <div class="mensaje">
+            <h2 class="text-center titulo">Perdiste</h2>
+            <button id="comenzar" onclick="start()">Volver a jugar</button>
+        </div>
+    </div>
     
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
