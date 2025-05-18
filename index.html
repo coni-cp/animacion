@@ -18,6 +18,10 @@
         <div class="ubi-perso">
             <img src="assets/img/personaje.png" class="persona" id="personaje"> 
         </div>
+        <div class="ubi-pig">
+            <p id="texto-pig">Escondete, se esta agotando el tiempo!</p>
+            <img src="assets/img/pig.png" class="pig" id="menjs-pig">
+        </div>
         <img src="assets/img/creepy.png" class="creepy" id="mata">
         <img src="assets/img/explosion.jpg" id="explosion"> 
         <audio src="assets/audio/explosion-creeper.mp3" id="audioExplosion"></audio>
@@ -29,26 +33,26 @@
             <h2>Controles</h2>
             <ul class="controles">
                 <li id="up"> Mover arriba -> <strong>W</strong></li>
-                <li id="left"> Mover izquierda -> <strong>A</strong></li>
-                <li id="down"> Mover abajo -> <strong>S</strong></li>
-                <li id="right">Mover derecha -> <strong>D</strong></li>
-                <li id="leave">Desaparecer -> <strong>P</strong></li>
+                <li > Mover izquierda -> <strong>A</strong></li>
+                <li > Mover abajo -> <strong>S</strong></li>
+                <li >Mover derecha -> <strong>D</strong></li>
+                <li >Desaparecer -> <strong>P</strong></li>
+                <li >Mensaje-> <strong>L</strong></li>
             </ul>
         </div>
-        <div class="instrucciones" id="ocultarIns">
-            <div class="mensaje">
-                <h2 class="text-center titulo">Recuerda</h2>
-                <p>Cuando comience el juego, tendrás solo 10 segundos para esconderte. Cuando el Creeper alcance el árbol… prepárate para la explosión.</p>
+       <div class="instrucciones" id="ocultarIns">
+            <div class="bienvenida">
+                <h2 class="titulo">Recuerda</h2>
+                <p class="texto-inicial">Cuando comience el juego, tendrás solo 10 segundos para esconderte. Cuando el Creeper alcance el árbol… prepárate para la explosión.</p>
                 <button id="comenzar" onclick="start()">Comenzar</button>
             </div>
         </div>
     </div>
-    <div class="instrucciones-finales"  id="final">
-        <div class="mensaje">
-            <h2 class="text-center titulo">¡Perdiste!</h2>
-            <button id="denuevo" onclick="location.reload()">Volver a jugar</button>
+     <div class="instrucciones-finales"  id="final">
+        <div class="bienvenida">
+            <button  id="denuevo" onclick="location.reload()">Volver a jugar</button>
         </div>
-    </div>
+    </div> 
     
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

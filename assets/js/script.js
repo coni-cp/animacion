@@ -6,11 +6,13 @@ console.log('conexion')
 })
 
 $("#final").hide();
+$("#texto-pig").hide();
 
 
 function start(){
     $(document).ready(function () {
         const $personaje = $("#personaje");
+        const $mensaje = $("#texto-pig");
         $(document).keydown(function (l) {
             if (l.which === 65) { // A - izquierda
                 $personaje.stop(true, true).animate({ left: '-=20px' }, 100);
@@ -27,6 +29,9 @@ function start(){
             else if (l.which === 80) { // P- desaparece
                 $personaje.toggle(400);
             }
+              else if (l.which === 76) { // L- mensaje
+                $mensaje.show();
+            }
         });//funcion keydown
 
         function aparece() {
@@ -35,7 +40,7 @@ function start(){
 
             $("#mata")
                 .show()
-                .animate({ left: "300px" }, 2000, function () {
+                .animate({ left: "150px" }, 2000, function () {
                     explosion.play();
                     $("#explosion").fadeIn(200);
 

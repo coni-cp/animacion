@@ -10,30 +10,45 @@ body{
     margin: 0;
     padding: 0;
 }
-#explosion{
-    position: fixed;      /* <-- Esto es esencial */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 9999;         /* Asegúrate de que esté sobre todo */
-    object-fit: cover;     /* Ajusta la imagen sin deformarla */
-    display: none;
+.titulo{
+    font-size: 50px;
 }
+p{
+    font-family: "Share Tech Mono", monospace;
+    font-size: 28px;
+    color: white;
+    padding: 10px 30px;
+}
+h2{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+.bienvenida{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+.texto-inicial{
+    font-size: 30px;
+}
+.controles, p{
+    font-family: "Share Tech Mono", monospace;
+    font-size: 22px;
+    color: white;
+}
+
 .campo{
     display: flex;
 }
-.creepy{ 
-    display: none;
-    position: fixed;
-    top: 250px;
-    left: 1300px;
-    z-index: 2;
-}
+
 .panal{
     position: fixed;
-    top: 120px;
-    left: 300px;
+    height: 550px;
+    top: 100px;
+    left: 100px;
     z-index: 1;
 }
 
@@ -42,6 +57,22 @@ body{
      width: 200px;
     height: 300px; 
     z-index: 0;
+}
+.pig{
+    position: fixed;
+    height: 350px;
+    top: 400px;
+    left: 1300px;
+    z-index: 0;
+}
+#texto-pig{
+    background-color: rgba(110, 62, 7, 0.767);
+    position: fixed;
+    border-radius: 5px;
+    top: 400px;
+    left: 1020px;
+    z-index: 0;
+    width: 300px;
 }
 
 .tablero{
@@ -56,27 +87,7 @@ body{
     padding: 10px;
     text-align: left;
 }
-h2{
-    font-family: "Press Start 2P", system-ui;
-    font-size: 28px;
-    color: white;
-    margin-bottom: 20px;
 
-}
-.controles, p{
-    font-family: "Share Tech Mono", monospace;
-    font-size: 22px;
-    color: white;
-}
-.titulo{
-    font-size: 40px;
-}
-p{
-    font-family: "Share Tech Mono", monospace;
-    font-size: 28px;
-    color: white;
-    padding: 10px 30px;
-}
 .instrucciones {     
     background-color: rgba(48, 30, 9, 0.753);
     position: fixed; /* o absolute, según necesidad */
@@ -87,6 +98,25 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.creepy{ 
+    display: none;
+    position: fixed;
+    top: 250px;
+    left: 1300px;
+    z-index: 2;
+}
+
+#explosion{
+    position: fixed;      /* <-- Esto es esencial */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;         /* Asegúrate de que esté sobre todo */
+    object-fit: cover;     /* Ajusta la imagen sin deformarla */
+    display: none;
 }
 .instrucciones-finales {
     background-color: rgba(66, 41, 13, 0.973);
@@ -101,17 +131,12 @@ p{
     z-index: 9999; /* más alto para estar sobre todo */
 }
 
-.mensaje{
-    width: 50%;
-    height: 50%;
-    text-align: center;
-}
 
 button{
     font-family: "Press Start 2P", system-ui;
     font-size: 18px;
     color: white;
-    padding: 20px 15px;
+    padding: 20px 30px;
     background-color: rgb(119, 90, 18);
     border: 1px solid goldenrod;
     border-radius: 5px;
