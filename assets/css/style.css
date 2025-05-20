@@ -6,7 +6,7 @@
 body{
     background: url(../img/planicie.jpg) 50% 0 no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
